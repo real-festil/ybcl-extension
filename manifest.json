@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Better Comment Layout",
+  "version": "1.0",
+  "description": "Change the layout of YouTube comments/recommendations section",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["*://www.youtube.com/*"],
+      "css": ["styles.css"]
+    }
+  ]
+}
